@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bl.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="Website icon" href="../image/logoWeb.png" type="png"">
+    <title>Blog</title>
+    <header>
+        <div class="header">
+    
+            <div class="navbar">
+                <ul>
+                    <li><a href="./Trang_chu.html#home" class="logo" >QUTA House</a></li>
+                    <li><a href="./Trang_chu.html#menu" class="logo"  >Menu</a></li>
+                    <li><a href="./Trang_chu.html#about"  class="logo" >cloudfee</a></li>
+                    <li><a href="./Trang_chu.html#review" class="logo">Review</a></li>
+                    <li><a href="./Trang_chu.html#blog" class="logo">oUr_house</a></li>
+                    <li><a href="./Login.php" class="logo">Member</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+@font-face {
+    font-family: 'Droidiga';
+    src: url('/Droidiga.otf') format('opentype');
+}
+.logo {
+    font-family: 'Droidiga', sans-serif;
+    font-size: 20px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar > ul {
+    height: 60px;
+    width: 100vw;
+    list-style: none;
+    justify-content: start;
+    display: flex;
+    align-items: center;
+    padding-left: 280px;
+    position: fixed ;
+    top: 0;
+    background-color: rgba(35, 36, 37, 0.862);
+}
+
+.navbar > ul > li > a {
+    position: relative;
+    color: #ffffff;
+    font-size: 25px;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    padding: 5px 35px;
+    
+}
+
+.navbar > ul > li > a:before {
+    content: "";
+    position: absolute;
+    background-color: orange;
+    height: 5px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.navbar > ul > li > a:after {
+    content: "";
+    position: absolute;
+    background-color: orange;
+    height: 5px;
+    width: 0;
+    right: 0;
+    top: -10px;
+    transition: 0.3s;
+}
+
+.navbar > ul > li > a:hover:after {
+    width: 100%;
+}
+
+.navbar > ul > li > a:hover:before {
+    width: 100%;
+}
+.navbar > ul > li > a:hover{
+    text-shadow: 2px 2px 2px orange;
+}
+
+
+    .box1 {
+        width: 60%;
+        height: 2100px;
+        margin-left: 280px;
+        margin-top: 30px;
+    }
+    .anh1 a img{
+        width: 90%;
+        padding-left: 80px;
+    }
+    .anh1 p {
+        font-style: italic;
+        padding-top: 10px;
+        text-align: center;
+    }
+    .nutbam {
+        width: 150px;
+        background-color: black;
+        margin-left: 70%;
+        margin-top:30px;
+    }
+    .nutbam a {
+        text-decoration: none;
+        color:white;
+    }
+    
+.bt1 {
+    background-color:black;
+    border-radius:  15px;
+    color: #ffffff;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    margin-left: 65%;
+    margin-top: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    position: relative; 
+    z-index: 1; 
+}
+
+.bt1:hover {
+    background-color:orange;
+    padding-left: 3rem;
+    padding-right: 3rem; 
+    border: 1px solid orange;
+}
+
+.bt1::after {
+    content: ''; 
+    position: absolute; 
+    width: 100%;
+    height: 100%; 
+    background-color: rgba(255, 255, 255, 0);
+    top: 0; 
+    left: 100%; 
+    z-index: -1;
+    transform: scaleX(0); 
+    transform-origin: right; 
+    transition: transform 0.3s ease-out; 
+}
+.bt1:hover::after {
+    transform: scaleX(1); 
+    transform-origin: left; 
+}
+
+
+
+.bt1 a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Lexend", sans-serif;
+}
+
+.footer {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    font-family: "Lexend", sans-serif;
+}
+
+.footer-content {
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px 20px;
+}
+
+.footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-section .facebook-page img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.footer-bottom {
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 20px;
+}
+.box1 p {
+ font-size: 20px;
+}
+
+
+
+</style>
+<body>
+    <div class="header">
+        <a href=""><img src="../image/blog31.png" width="100%"  height="500px" alt=""></a>
+    </div>
+    <div class="box1">
+        <h4>BLOG | Coffeeholic</h4> <br>
+        <h1 class="text1">SIGNATURE - BIỂU TƯỢNG VĂN HOÁ CÀ PHÊ CỦA THE COFFEE HOUSE ĐÃ QUAY TRỞ LẠI</h1> <br>
+        <p>Mới đây, các "tín đồ" cà phê đang bàn tán xôn xao về SIGNATURE - Biểu tượng văn hóa cà phê của The Coffee House đã quay trở lại.</p> <br>
+        <p style="color: orange; font-size: 25px;" >Một lời hẹn làm bao người xao xuyến </p> <br>
+<p>Hầu hết cuộc đời mỗi người đều trải qua một (hoặc nhiều) lần rơi vào vòng lặp của tạo hóa. Đơn giản nhất, hãy nhìn chính bản thân mình: sinh ra, lớn lên, đi học, đi làm, tìm kiếm bạn đời, xây dựng gia đình, và tận hưởng tuổi già....</p> <br>
+         <p>Các đô thị lớn tại Việt Nam ngày nay không thiếu những nhà hàng xa
+            hoa sang trọng, đủ phong cách ẩm thực từ Đông sang Tây, nhưng dấu ấn
+             của những món ăn vặt trên góc phố “vang bóng một thời” là không thể 
+             xóa bỏ. Và Sài Gòn là một minh chứng như thế. </p> <br>
+            <div class="anh1">
+                <a href=""><img src="../image/blog32.png" alt=""></a>
+                <p>Ẩm thực đường phố Sài Gòn gắn liền với ký ức bao thế hệ.
+                 Một trong số đó là món bánh flan cà phê đá bào giải khát
+                  những ngày hè nắng nóng. (Nguồn ảnh: Internet)</p> <br>
+            </div>
+            <p>Trong số những “món ruột” nhất định phải thử ấy,
+                 bánh flan cà phê đá bào được xem là hương vị ngọt
+                  ngào bất hủ của nhiều thế hệ. Nếu có dịp xem lại những thước phim cũ về 
+                  Sài Gòn, người ta sẽ thấy long lanh giữa trưa hè nóng nực
+                   là ánh mắt hồ hởi của mấy đứa trẻ con đón lấy đĩa bánh flan
+                    cà phê và thưởng thức trong niềm vui sướng. Một món ăn bình dị,
+                     nhưng là cả một bầu trời lấp lánh niềm vui sướng hồn nhiên.Bánh flan mềm mịn,
+                   ăn cùng đá được bào nhuyễn, rưới thêm cà phê thơm 
+                   đậm đà là thức quà vặt dễ ăn, dễ mê, cũng dễ bắt gặp
+                    trên mọi con phố. Dù ảnh hưởng từ món tráng miệng
+                     Crème Brulée lừng danh của Pháp, nhưng người Sài Gòn 
+                     xưa đã nhanh chóng biến bánh flan thành “đặc sản” của
+                      riêng mình. Nếu có dịp xem lại những thước phim cũ về 
+                      Sài Gòn, người ta sẽ thấy long lanh giữa trưa hè nóng nực
+                       là ánh mắt hồ hởi của mấy đứa trẻ con đón lấy đĩa bánh flan
+                        cà phê và thưởng thức trong niềm vui sướng. Một món ăn bình dị,
+                         nhưng là cả một bầu trời lấp lánh niềm vui sướng hồn nhiên. </p> <br>
+
+              <p style="color:orange">  Tìm lại dấu ấn ẩm thực tuổi thơ trong thức uống hiện đại </p> <br>
+                
+              <p>  Trong quá trình tìm kiếm điểm nhấn mới lạ cho menu cà phê có đến
+                 20 món, The Coffee House đã lấy cảm hứng từ niềm hạnh phúc trẻ thơ 
+                 ấy để sáng tạo ra thức uống có kết nối với văn hoá của Sài Gòn, đồng
+                  thời cũng rất “hợp trend”: Phin Sữa Tươi Bánh Flan.
+                  Nếu có dịp xem lại những thước phim cũ về 
+                  Sài Gòn, người ta sẽ thấy long lanh giữa trưa hè nóng nực
+                   là ánh mắt hồ hởi của mấy đứa trẻ con đón lấy đĩa bánh flan
+                    cà phê và thưởng thức trong niềm vui sướng. Một món ăn bình dị,
+                     nhưng là cả một bầu trời lấp lánh niềm vui sướng hồn nhiên. </p> <br>
+                  <div class="anh1">
+<a href=""><img src="../image/blgo33.png" alt=""></a>
+                    <p>Phin Sữa Tươi Bánh Flan - thức uống mới mang nhiều kỷ niệm tuổi thơ và ký ức về Sài Gòn xa xưa.</p>
+                  </div>    
+                  <button class="bt1"><a href="./Trang_chu.html" style="font-family: Lexend;" >VỀ TRANG CHỦ</a></button>
+
+
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Giới thiệu</h3>
+                <ul>
+                    <li><a href="#home">Be_soi house</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">CloudFee</a></li>
+                    <li><a href="#review">Review</a></li>
+                    <li><a href="#blog">Our_house</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Điều khoản</h3>
+                <ul>
+                    <li><a href="#">Điều khoản sử dụng</a></li>
+                    <li><a href="#">Chính sách bảo mật thông tin</a></li>
+                    <li><a href="#">Hướng dẫn xuất hóa đơn GTGT</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Liên hệ</h3>
+                <ul>
+                    <li>Đặt hàng: 1800 6936</li>
+                    <li>Liên hệ</li>
+                    <li>Tầng 3-4 Hub Building<br>195/10E Điện Biên Phủ, P.15,<br>Q.Bình Thạnh, TP.Hồ Chí Minh</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Facebook</h3>
+                <div class="facebook-page">
+                    <img src="facebook-page.jpg" alt="Facebook Page">
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2014-2022 Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN</p>
+            <p>Mã số DN: 0312867172 do sở kế hoạch và đầu tư tp. HCM cấp ngày 23/07/2014. Người đại diện: NGÔ NGUYỄN KHA</p>
+            <p>Địa chỉ: 86-88 Cao Thắng, phường 04, quận 3, tp Hồ Chí Minh Điện thoại: (028) 7107 8079 Email: hi@thecoffeehouse.vn</p>
+        </div>
+    </footer>
+    </html>
+    
+    
+</body>
+</html>

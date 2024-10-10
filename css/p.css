@@ -1,0 +1,314 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'Droidiga';
+    src: url('/Droidiga.otf') format('opentype');
+}
+
+.body{
+    font-family: "Lexend", sans-serif;
+    scroll-snap-type: y mandatory;
+}
+
+.logo {
+    font-family: 'Droidiga', sans-serif;
+    font-size: 20px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar > ul {
+    height: 60px;
+    width: 100vw;
+    list-style: none;
+    justify-content: start;
+    display: flex;
+    align-items: center;
+    padding-left: 280px;
+    position: fixed ;
+    top: 0;
+    background-color: rgba(35, 36, 37, 0.862);
+}
+
+.navbar > ul > li > a {
+    position: relative;
+    color: #ffffff;
+    font-size: 25px;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    padding: 5px 35px;
+    
+}
+
+.navbar > ul > li > a:before {
+    content: "";
+    position: absolute;
+    background-color: orange;
+    height: 5px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.navbar > ul > li > a:after {
+    content: "";
+    position: absolute;
+    background-color: orange;
+    height: 5px;
+    width: 0;
+    right: 0;
+    top: -10px;
+    transition: 0.3s;
+}
+
+.navbar > ul > li > a:hover:after {
+    width: 100%;
+}
+
+.navbar > ul > li > a:hover:before {
+    width: 100%;
+}
+.navbar > ul > li > a:hover{
+    text-shadow: 2px 2px 2px orange;
+}
+
+.box {
+    width: 50%;
+    display: flex;
+    margin-left: 300px;
+    margin-top: 150px;
+  
+    
+}
+
+.box1 {
+    width: 60%;
+    margin-right: 20px;
+    
+}
+.box1 ul li img:hover {
+    transform: scale(1.1); 
+}
+.box1 ul li img {
+    transition: all 0.3s ease-in-out;
+}
+.box2 {
+    width: 40%;
+    margin-left: 30px;
+}
+.mota {
+    width: 60%;
+    margin-left: 300px;
+    margin-top: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.199);
+    border-top: 1px solid rgba(0, 0, 0, 0.199);
+}
+.f1 {
+    display: flex;
+    margin-left: 300px;
+    margin-top: 20px;
+    justify-content: space-around;
+    width: 60%;
+}
+.footer2 {
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.849);
+    height: 300px;
+    margin-top: 20px;
+}
+
+.boxf {
+    display: flex;
+    width: 50%;
+    margin-left: 400px;
+    justify-content: space-around;
+    padding-top: 20px;
+   
+}
+.container {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.product img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.product-details {
+    text-align: left;
+    width: 100%;
+}
+
+.size-button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.size-button#small  {
+    background-color: orange;
+    color:white;
+    border: 1px solid orange;
+}
+
+#medium {
+    background-color: #4caf50;
+    color: white;
+}
+
+#large {
+    background-color: #2196f3;
+    color: white;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+.total-price {
+    margin-top: 20px;
+}
+
+.total-price h2 {
+    font-size: 24px;
+}
+
+.order-button {
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6600;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+}
+.footer {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    font-family: "Lexend", sans-serif;
+    margin-top: 20px;
+}
+
+.footer-content {
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px 20px;
+}
+
+.footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-section .facebook-page img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.footer-bottom {
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 20px;
+}
+
+.wrapper {
+  width: 485px;
+}
+
+#preview {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+.facebook-page a p:hover {
+    color: orange   ;
+}
+.product-details h2 {
+    font-family: "Lexend", sans-serif;
+}
+.product-details p {
+    font-family: "Lexend", sans-serif;
+}
+.product-details button {
+    font-family: "Lexend", sans-serif;
+    font-size: 20px;
+}
+.product-details label {
+    font-family: "Lexend", sans-serif;
+}
+.total-price h2 {
+    font-family: "Lexend", sans-serif;
+}
+.mota h2 {
+    font-family: "Lexend", sans-serif;
+}
+.mota p {
+    font-family: "Lexend", sans-serif;
+}
+.order-button {
+    font-family: "Lexend", sans-serif;
+    font-size: 15px;
+}

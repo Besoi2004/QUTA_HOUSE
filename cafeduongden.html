@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frosty Cafe đường đen</title>
+    <link rel="stylesheet" href="./css/p.css">
+    <script src="web1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="Website icon" href="../image/logoWeb.png" type="png"">
+<header>
+    <div class="header">
+
+        <div class="navbar">
+            <ul>
+                <li><a href="./Trang_chu.html" class="logo" >QUTA House</a></li>
+                <li><a href="./Trang_chu.html#menu" class="logo"  >Menu</a></li>
+                <li><a href="./Trang_chu.html#about"  class="logo" >cloudfee</a></li>
+                <li><a href="./Trang_chu.html#review" class="logo">Review</a></li>
+                <li><a href="./Trang_chu.html#blog" class="logo">oUr_house</a></li>
+                <li><a href="./Login.php" class="logo">Member</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<body>
+    <div class="box">
+        <div class="box1">
+            <section class="wrapper">
+                <img id="preview" src="../image/f.webp">
+                <a href=""><img src="../image/f.webp" width="100px" style="border-radius:10px;" alt=""></a>
+                
+              </section>
+
+        </div>
+        <div class="box2">
+            <div class="container">
+                <div class="product">
+                    <div class="product-details">
+                        <h2 style="font-size: 30px;">Frosty Cafe đường đen</h2> <br> 
+                        <p class="price" style="color: orange; font-size: 30px;"  >59.000 đ</p>
+                        <p>Chọn size (bắt buộc):</p>
+                        <button class="size-button" id="small" onclick="selectSize('small')">Nhỏ + 0 đ</button>
+                        <button class="size-button" id="medium" onclick="selectSize('medium')">Vừa + 10,000 đ</button>
+                        <button class="size-button" id="large" onclick="selectSize('large')">Lớn + 16,000 đ</button> <br> <br>
+                        <p>Topping:</p>
+                        <label><input type="checkbox" value="caramel" onclick="toggleTopping('caramel')"> Sốt Caramel + 10,000 đ</label>
+                        <label><input type="checkbox" value="espresso" onclick="toggleTopping('espresso')"> Shot Espresso + 12,000 đ</label>
+                        <label><input type="checkbox" value="pearl" onclick="toggleTopping('pearl')"> Trân châu trắng + 15,000 đ</label>
+                    </div>
+                </div>
+                <div class="total-price">
+                    <h2>Tổng cộng: <span id="total">59.000 </span> đ</h2>
+                </div>
+                <button class="order-button" onclick="placeOrder()">Đặt giao tận nơi</button>
+            </div>
+            <script src="script.js"></script>
+
+
+        </div> <br>
+</div>
+    <div class="mota">
+        <br>
+        <h2 style="font-size: 30px;"">MÔ TẢ SẢN PHẨM</h2> <br> 
+        <p>Cho ngày thêm tươi, tỉnh, êm, mượt với Trà Xanh Espresso Marble. 
+            Đây là sự mai mối bất ngờ giữa trà xanh Tây Bắc vị mộc và cà phê Arabica Đà Lạt.
+             Muốn ngày thêm chút highlight, nhớ tìm đến sự bất ngờ này bạn nhé!
+        </p> <br><br>
+        
+    </div>
+    <div class="f1">
+        <div class="anh1">
+            <a href=""><img src="../image/cafe1.webp" width="130px" style="border-radius: 10px;" alt=""></a> 
+            <h4> Espresso Marble</h4> <br>
+            <p>49.000 đ</p>
+        </div>
+        <div class="anh2">
+            <a href="./tira.html"><img src="../image/cake.webp" width="130px" style="border-radius: 10px;" alt=""></a>
+            <h4>Mousse Tiramisu</h4> <br>
+            <p>35.000 đ</p>
+        </div>
+        <div class="anh3">
+            <a href="./duongdensuada.html"><img src="../image/cafe.webp" width="130px" style="border-radius: 10px;" alt=""></a> 
+            <h4>Đường Đen Sữa Đá</h4> <br>
+            <p>45.000 đ</p>
+        </div>
+        <div class="anh4">
+            <a href="./phin-gato.html"><img src="../image/f.webp" width="130px" style="border-radius: 10px;" alt=""></a>
+            <h4>Frosty Phin Gato</h4>  <br>
+            <p>59.000 đ</p>
+        </div>
+        <div class="anh5">
+            <a href="./olongtuquysen.html"><img src="../image/tra_trai_cay.webp" width="130px" style="border-radius: 10px;" alt=""></a>
+            <h4>Olong Tứ Quý Sen</h4> <br>
+            <p>49.000 đ</p>
+        </div>
+        <div class="anh6">
+            <a href="./yukuchantrau.html"><img src="../image/hi_tea2.webp" width="130px" style="border-radius: 10px;" alt=""></a>
+            <h4> Yuzu Trân Châu</h4> <br>
+            <p>49.000 đ</p>
+    </div>
+    
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Giới thiệu</h3>
+                <ul>
+                    <li><a href="#home">QT HOUSE</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">CloudFee</a></li>
+                    <li><a href="#review">Review</a></li>
+                    <li><a href="#blog">Our_house</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Điều khoản</h3>
+                <ul>
+                    <li><a href="#">Điều khoản sử dụng</a></li>
+                    <li><a href="#">Chính sách bảo mật thông tin</a></li>
+                    <li><a href="#">Hướng dẫn xuất hóa đơn GTGT</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Liên hệ</h3>
+                <ul>
+                    <li>Đặt hàng: 1800 6936</li>
+                    <li>Liên hệ</li>
+                    <li>Tầng 3-4 Hub Building<br>195/10E Điện Biên Phủ, P.15,<br>Q.Bình Thạnh, TP.Hồ Chí Minh</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Facebook</h3>
+                <div class="facebook-page">
+                    <a href="facebook.com" style="color: white; text-decoration: none;" target="_blank"><p>Liên hệ với chúng tôi tại đây</p></a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2014-2022 Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN</p>
+            <p>Mã số DN: 0312867172 do sở kế hoạch và đầu tư tp. HCM cấp ngày 23/07/2014. Người đại diện: NGÔ NGUYỄN KHA</p>
+            <p>Địa chỉ: 86-88 Cao Thắng, phường 04, quận 3, tp Hồ Chí Minh Điện thoại: (028) 7107 8079 Email: hi@thecoffeehouse.vn</p>
+        </div>
+    </footer>
+    </html>
+<script>
+let basePrice = 59000;
+let sizePrice = 0;
+let toppings = {
+    caramel: false,
+    espresso: false,
+    pearl: false
+};
+const prices = {
+    small: 0,
+    medium: 10000,
+    large: 16000,
+    caramel: 10000,
+    espresso: 12000,
+    pearl: 15000
+};
+
+function selectSize(size) {
+    sizePrice = prices[size];
+    calculateTotal();
+}
+
+function toggleTopping(topping) {
+    toppings[topping] = !toppings[topping];
+    calculateTotal();
+}
+
+function calculateTotal() {
+    let total = basePrice + sizePrice;
+    for (let topping in toppings) {
+        if (toppings[topping]) {
+            total += prices[topping];
+        }
+    }
+    document.getElementById('total').innerText = total.toLocaleString();
+}
+
+function placeOrder() {
+    alert(`Tổng cộng: ${document.getElementById('total').innerText} đ\nCảm ơn bạn đã đặt hàng!`);
+}
+</script>
+<script>
+const $thumbnails = document.querySelectorAll('.thumbnail');
+const $preview = document.getElementById('preview');
+
+$thumbnails.forEach(($item) => {
+  $item.addEventListener(
+    'click',
+    (event) => {
+      $thumbnails.forEach((i) => {
+        i.classList.remove('active');
+      });
+      $item.classList.add('active');
+      $preview.src = $item.src;
+    },
+  );
+});
+</script>
+    
